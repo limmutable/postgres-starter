@@ -16,7 +16,7 @@ export async function seed() {
   const users = await Promise.all([
     sql`
           INSERT INTO users (name, email, image)
-          VALUES ('Jeffrey Rauch', 'rauchg@vercel.com', 'https://pbs.twimg.com/profile_images/1576257734810312704/ucxb4lHy_400x400.jpg')
+          VALUES ('Jeffrey Lim', 'rauchg@vercel.com', 'https://pbs.twimg.com/profile_images/1576257734810312704/ucxb4lHy_400x400.jpg')
           ON CONFLICT (email) DO NOTHING;
       `,
     sql`
